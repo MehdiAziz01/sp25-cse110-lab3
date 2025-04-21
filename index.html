@@ -2,29 +2,42 @@
 <html lang="en">
 
   <head>
+    <meta charset="UTF-8">
     <title>Meeting notes for Lab 2</title>
-    <meta charset="UTF-8"> 
-    <link rel="icon" href="favicon.ico" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS for quick experiments -->
+    <style>
+        /* Internal CSS */
+        h2 {
+            color: #3498db; /* Blue color */
+            text-align: center; /* Center-align the heading */
+        }
+        .highlight {
+            background-color: yellow; /* Highlight class for experiment */
+        }
+    </style>
   </head>
 
   <body>
     
-    <header>
+    <header class="header" id="main-header">
         <h1>The secret to reaching success</h1>
-        <p>What are the first steps to creating that change <br> which we all seek.</p>
-      </header>
+        <p class="lead-text">What are the first steps to creating that change <br> which we all seek.</p>
+    </header>
 
-    <h2>a guide to achieving your goals </h2>
+    <h2 class="text-align">A guide to achieving your goals</h2>
     
     <h3>April 13, 2025</h3>
     <hr>
-    <div class="Attendance List">
+    <div class="attendance-list">
         <h5>Attendance List:</h5>
         <ul>
-            <li>Mehdi Aziz</li>
-            <li>Charzard</li>
-            <li>Squirtle</li>
-            <li>Lugia</li>
+            <li class="attendee">Mehdi Aziz</li>
+            <li class="attendee">Charzard</li>
+            <li class="attendee">Squirtle</li>
+            <li class="attendee">Lugia</li>
         </ul>
         <h5>Meeting is going to cover:</h5>
         <ol>
@@ -32,13 +45,12 @@
             <li>How to be realistic in setting your goals.</li>
             <li>Working in silence.</li>
         </ol>
-
     </div>
     
-    <main> This meeting is going to cover the <strong>tenacity</strong>, <strong>mindset</strong>, and <strong>goals</strong> needed to achieve success with your goals.</main> 
+    <main class="container"> This meeting is going to cover the <strong>tenacity</strong>, <strong>mindset</strong>, and <strong>goals</strong> needed to achieve success with your goals.</main> 
     
     <hr>
-    <section>
+    <section class="inline-section">
         <details><summary>Want to know the <i>secret</i></summary>
             <input type="checkbox">
             <b>
@@ -46,86 +58,63 @@
             <span> Consistency</span>
             <span> Consistency</span>
             </b>
-            <p> <em>check that box so you can never forget.</em></p>
+            <p><em>check that box so you can never forget.</em></p>
         </details>
 
         <input type="radio" name="group2">
         <input type="radio" name="group1">
         <input type="radio" name="group3">
 
-
-        <p>rhetorical question asked, "When is the best time to start."</p>
+        <p>Rhetorical question asked, "When is the best time to start?"</p>
         <input type="date">
 
-        <details><summary>Answer</summary>The best time to start already passed, the second best time is now.. </details>
+        <details><summary>Answer</summary>The best time to start already passed, the second best time is now.</details>
         <br>
-        <h5>The question asked in meeting.</h5>
-        <h6>What can a rich person never get back</h6>
+        <h5>The question asked in meeting:</h5>
+        <h6>What can a rich person never get back?</h6>
         <select><option>Pick a Choice</option><option>Time</option><option>Love</option><option>Money</option></select>
         <button>Submit</button>
 
-
-
-
-
-
         <h3>Questions:</h3>
-        <p>What if your motivation dies out what do you do then?</p>
+        <p>What if your motivation dies out? What do you do then?</p>
         <h4>Answer:</h4>
-        <p>That is where discipline kicks in and saved the day.</p>
-
+        <p>That is where discipline kicks in and saves the day.</p>
     </section>
 
     <section><h4>Extra Notes:</h4>
-        <textarea>People quit before they get to the gold.</textarea>
-        <br>
-        <br>
-
+        <textarea class="highlight">People quit before they get to the gold.</textarea> <!-- Example of inline CSS -->
+        <br><br>
         <input list="options" placeholder="Favorite Food">
         <datalist id="options">
           <option value="Pasta">
           <option value="Rice">
           <option value="Lentils">
         </datalist>
-
     </section>
 
     <hr>
 
     <h1>Look at these for motivation.</h1>
-
     <a href="https://www.youtube.com/watch?v=8snbL_kVmXw">You need this energy</a>
-    <br>
-    <br>
+    <br><br>
 
     <img src="1-sprint-burndown-chart-example.png" alt="Meeting diagram" width="300" height="200">
-
     <br>
     <audio controls src="recording.mp3.m4a"></audio>
     <br>
-
-
     <video controls src="MightGuy.mp4"></video>
-
     <br>
     <p>This is where we are heading.</p>
     <nav>https://maps.app.goo.gl/hr8UbY8wQnu9KMd46</nav>
 
-
-
-
     <hr>
 
-    <p>it is important to affirm yourself because our mind likes to play tricks on us. <br>
-    fill in the textbox with something positive.</p>
-
+    <p>It is important to affirm yourself because our mind likes to play tricks on us. <br>Fill in the textbox with something positive.</p>
     <fieldset>I believe that I am <input type="text"></fieldset>
     <form>User input</form>
     <h4>New business:</h4>
-    <p> agenda of the statistics of success.</p>
+    <p>Agenda of the statistics of success.</p>
     <h4>Unfinished Business:</h4>
     <footer>Why do a lot of people fail.</footer>
 </body>
 </html>
-
-

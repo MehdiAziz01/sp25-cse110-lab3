@@ -1,0 +1,241 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    line-height: 1.6;
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(255, 0, 0); /* Red background */
+    color: rgb(0, 255, 0); /* Green text */
+    border-color: rgb(0, 0, 255); /* Blue border */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Class Selector (.class) */
+h2.text-align {
+    background-color: #FFF; /* White background */
+    color: #c01515; /* Dark red text */
+    border-color: #CCC; /* Light grey border */
+}
+
+/* ID Selector (#id) */
+#main-header {
+    font-size: 1.5em;
+}
+
+/* Universal Selector (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector (element) */
+h3 {
+    background-color: hsl(200, 100%, 50%); /* Blue color */
+}
+
+/* Attribute Selector [attribute=foo] */
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+/* Pseudo-class Selector (:hover, :active) */
+button:hover {
+    background-color: #27ae60;
+}
+
+button:active {
+    background-color: #1f8e49;
+    transform: scale(0.98);
+}
+
+/* Selector List (multiple elements) */
+h2, h3, footer {
+    text-align: center;
+}
+
+/* Descendant Combinator (element element) */
+.header p {
+    color: white;
+}
+
+/* Child Combinator (element > element) */
+header > h1 {
+    font-size: 2em;
+}
+
+/* General Sibling Combinator (element ~ element) */
+h2 ~ .attendance-list {
+    margin-top: 20px;
+}
+
+/* Adjacent Sibling Combinator (element + element) */
+h3 + .inline-section {
+    margin-top: 15px;
+}
+
+/* Combining Two Selectors (element.class) */
+h2.text-align {
+    text-align: center;
+    color: #c01515;
+}
+
+/* :has() Selector (New in CSS 2023) */
+section:has(p) {
+    background-color: #9b59b6; /* Purple background if section contains a p element */
+}
+
+/* Nested Selectors (New in CSS 2023) */
+footer p {
+    font-size: 0.8rem; /* Smaller text inside footer */
+}
+
+/* Flexbox Layout: Apply to a container with multiple children */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    flex: 1; /* Each child will take up equal width */
+}
+
+/* Grid Layout: Apply to a container with multiple children */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small screen: Phone (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .flex-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+    .container {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Medium screen: Tablet or smaller laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .flex-container {
+        flex-direction: row; /* Keep elements in a row layout */
+    }
+    .container {
+        width: 90%; /* Adjust width */
+    }
+}
+
+/* Large screen: Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .container {
+        width: 80%; /* Standard width for larger screens */
+    }
+}
+
+/* Background styling */
+body {
+    background-color: #ecf0f1;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #FF6347; /* Tomato color */
+}
+
+/* Using CSS variable with fallback */
+button {
+    background-color: var(--primary-color, #3498db); /* Fallback to blue if the variable is not set */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid red; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Longhand Margin for container */
+.container {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+/* Shortened Margin for container */
+.container {
+    margin: 20px 15px 20px 15px; /* top, right, bottom, left */
+}
+
+/* Longhand Padding for .content */
+.content {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+/* Shortened Padding for .content */
+.content {
+    padding: 10px 15px 10px 15px; /* top, right, bottom, left */
+}
+
+/* Longhand Border for box */
+.box {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3498db;
+}
+
+/* Shorthand Border for box */
+.box {
+    border: 2px solid #3498db; /* 2px width, solid style, blue color */
+}
+
+/* Border Radius */
+div {
+    border: 5px solid #3498db;
+    border-radius: 15px; /* 15px rounded corners */
+    padding: 20px;
+    margin: 30px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
